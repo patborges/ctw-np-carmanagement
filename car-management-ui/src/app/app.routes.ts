@@ -1,0 +1,14 @@
+import { Routes } from '@angular/router';
+
+import { IndexComponent } from './car/index/index.component'
+import { ViewComponent } from './car/view/view.component'
+import { CreateComponent } from './car/create/create.component'
+import { EditComponent } from './car/edit/edit.component'
+
+export const routes: Routes = [
+    { path: '', redirectTo: 'car/index', pathMatch: 'full' },
+    { path: 'car/index', component: IndexComponent },
+    { path: 'car/:carId/view', component: ViewComponent },
+    { path: 'car/create', component: CreateComponent },
+    { path: 'car/:carId/edit', component: EditComponent}
+];
