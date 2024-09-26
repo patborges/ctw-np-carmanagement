@@ -4,3 +4,5 @@ services:
     container_name: car-management-ui
     ports:
       - '4200:4200'
+    volumes:
+      - ./car-management-ui/src:/app/src

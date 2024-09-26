@@ -4,7 +4,6 @@ RUN mkdir -p /app
 WORKDIR /app
 COPY package.json /app/
 RUN ["npm", "install"]
-COPY ./src /app/src
 COPY *.json /app/
 COPY *.ts /app/
 EXPOSE 4200/tcp
