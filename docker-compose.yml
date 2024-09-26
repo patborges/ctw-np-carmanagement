@@ -1,0 +1,6 @@
+services:
+  car-management-ui:
+    build: ./car-management-ui/.
+    container_name: car-management-ui
+    ports:
+      - '4200:4200'
