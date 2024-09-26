@@ -28,9 +28,9 @@ When the command finishes the execution you should have an environment like this
 architecture-beta
   group app[Car Management]
 
-    service db(database)[Database] in app
-    service api(server)[API] in app
-    service ui(server)[UI] in app
+    service db(database)[Postgres] in app
+    service api(server)[Backend] in app
+    service ui(server)[Frontend] in app
 
     ui:R -- L:api
     api:R -- L:db
