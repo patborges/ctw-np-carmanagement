@@ -22,14 +22,6 @@
 *.tar.gz
 *.rar
 
-# Angular
-car-management-ui/.angular
-car-management-ui/.vscode
-car-management-ui/node_modules
-car-management-ui/public
-
-npm-debug.log
-
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
