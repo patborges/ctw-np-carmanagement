@@ -1,10 +1,24 @@
 # CarManagementUi
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.5.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.5. In order to run it you will need to install Angular 18 and Angular CLI 18.2.5.
+
+## Stack
+In our project, we use the following main technical tooling:
+- [Angular 18](https://angular.dev/)
+- [Angular CLI](https://github.com/angular/angular-cli)
+* [Docker](https://docs.docker.com/get-started/overview/)
 
 ## Development server
 
+You have two options to run you development environment:
+- Your local machine.
+- Using docker.
+
+### Using your local machine
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+### Using docker
+Run `docker compose up` for a complete docker development environment. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
