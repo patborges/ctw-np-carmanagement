@@ -11,7 +11,7 @@ import { Car } from '../model/car';
 })
 export class CarService {
 
-  private apiURL = "http://car-management-api:8080"
+  private apiURL = "http://localhost:8080"
 
   httpOptions = {
     headers: new HttpHeaders({
