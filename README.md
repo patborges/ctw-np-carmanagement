@@ -8,6 +8,8 @@ This repository contains the starting point for the Car Management application d
 
 To run the project you only need to have the following installed in your machine:
 - Docker Desktop (4.34 or above) with docker compose.
+- Java Development Kit (21)
+- Maven 
 
 
 ## Run development environment
@@ -17,9 +19,9 @@ We have prepared a development environment to make it easier to start developing
 - Backend application
 - Postgres instance
 
-In order to run the development environment you just need to execute the following command in a terminal window:
+In order to run the development environment you just need to execute the following commands in a terminal window:
 ```
-docker compose up
+docker compose -f ./car-management-api/docker-compose.yml -f ./car-management-ui/docker-compose.yml up
 ```
 
 When the command finishes the execution you should have an environment like this executing in your local machine:
