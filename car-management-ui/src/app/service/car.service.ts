@@ -11,7 +11,7 @@ import { Car } from '../model/car';
 })
 export class CarService {
 
-  private apiURL = "https://6943e191-fac9-4690-8d2f-11d2810d752f.mock.pstmn.io"
+  private apiURL = "http://car-management-api:8080"
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -28,7 +28,7 @@ export class CarService {
    */
   getAll(): Observable<any> {
   
-    return this.httpClient.get(this.apiURL + '/cars')
+    return this.httpClient.get(this.apiURL + '/car')
   
     .pipe(
       catchError(this.errorHandler)

@@ -32,6 +32,13 @@ quarkus:
       generation: none
     log:
       sql: ${hibernate_orm_log_sql:true}
+  http:
+    cors:
+      ~: true
+      origins: http://localhost:4200
+      access-control-allow-credentials: true
+      headers: accept, authorization, content-type, x-requested-with
+      methods: GET, POST, PUT, OPTIONS
 
 "%prod":
   quarkus:
@@ -46,3 +53,10 @@ quarkus:
         initial-size: ${db_pool_min_size:2}
         min-size: ${db_pool_min_size:2}
         max-size: ${db_pool_max_size:5}
+    http:
+      cors:
+        ~: true
+        origins: http://localhost:4200
+        access-control-allow-credentials: true
+        headers: accept, authorization, content-type, x-requested-with
+        methods: GET, POST, PUT, OPTIONS

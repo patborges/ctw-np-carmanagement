@@ -1,0 +1,15 @@
+services:
+  car-management-ui:
+    container_name: car-management-ui
+    build:
+        context: .
+        dockerfile: Dockerfile
+    networks:
+      - car-management-api_car-management-network
+    ports:
+      - '4200:4200'
+    volumes:
+      - ./src:/app/src
+networks:
+  car-management-api_car-management-network:
+    external: true

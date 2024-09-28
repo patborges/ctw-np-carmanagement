@@ -6,7 +6,7 @@ import { CreateComponent } from './car/create/create.component'
 import { EditComponent } from './car/edit/edit.component'
 
 export const routes: Routes = [
-    { path: '', redirectTo: 'car/index', pathMatch: 'full' },
+    { path: '', component: IndexComponent },
     { path: 'car/index', component: IndexComponent },
     { path: 'car/:carId/view', component: ViewComponent },
     { path: 'car/create', component: CreateComponent },
