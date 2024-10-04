@@ -9,6 +9,8 @@
             <th>ID</th>
             <th>Brand</th>
             <th>Model</th>
+            <th>Engine Type</th>
+            <th>Booking</th>
             <th width="250px">Action</th>
             </tr>
         </thead>
@@ -17,10 +19,16 @@
                 <td>{{ car.id }}</td>
                 <td>{{ car.brand }}</td>
                 <td>{{ car.model }}</td>
+                <td>{{ car.engineType }}</td>
+                <td>
+                    <a href="#" routerLink="/car/booking" class="btn btn-success">Reserve</a>
+                    <!-- if not available for booking -->
+                    <!-- [class.disabled]="!car.isAvailable" [disabled]="!car.isAvailable" -->
+                </td>
                 <td>
                     <a href="#" [routerLink]="['/car/', car.id, 'view']" class="btn btn-info">View</a>
                     <a href="#" [routerLink]="['/car/', car.id, 'edit']" class="btn btn-primary">Edit</a>
-                    <button type="button" class="btn btn-danger">Delete</button>
+                    <button type="button" class="btn btn-danger" (click)="deleteCar(car.id)">Delete</button>
                 </td>
             </tr>
         </tbody>

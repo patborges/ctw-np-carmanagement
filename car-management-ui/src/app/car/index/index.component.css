@@ -1,0 +1,23 @@
+/* Will think about it later */
+
+.container {
+    padding: 20px;
+}
+
+.table {
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+a {
+    margin: 0 5px; /* same as button */
+}
+
+.btn {
+    margin: 0 5px; /* add 5px margin to the left and right of each button */
+}

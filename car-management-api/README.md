@@ -72,10 +72,11 @@ There are two different ways to run the application.
     ```
   Test execution success messages and a build success message should be displayed as output
 
+# THIS ONE !!!
 #### 2) Build and startup the application's containers
-- Through the CLI/terminal execute the command below.<br/>
+- Through the CLI/terminal execute the command below (modified for linux [ docker compose>=v2 ]).<br/>
     ```
-    docker-compose up --build -d
+    sudo docker compose up --build -w
     ```
   The creates and starts up all the containers needed to run the application (Backend API, DB, including the DB initialization with liquibase). The application should be accessible in http://localhost:8080.
 

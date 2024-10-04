@@ -6,6 +6,8 @@ package com.ctw.car.entity;
 public enum EngineType {
     BEV, // Electric
     PHEV, // Plugin hybrid
-    GASOLINE, // ICE/Gasoline
-    DIESEL; // ICE/Diesel
+    GASOLINE, // ICE/Gasoline 
+    DIESEL, // ICE/Diesel (DSL)
+    GAS;    // LPG/ GPL
 }
+ 

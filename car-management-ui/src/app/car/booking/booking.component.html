@@ -1,0 +1,35 @@
+
+<div class="container">
+    <h1>Booking a Car Form</h1>
+    <form>
+        <!-- (ngSubmit)="bookingCar()" -->
+        <label for="name">Name:</label>
+        <input type="text">
+        <br><br>
+        <label for="contact">Contact: +351</label>
+        <input type="tel" required>
+        <br><br>
+        <label for="license_plate">License Plate:</label>
+        <input type="text">
+        <!-- Fill it automatically? -->
+        <br><br>
+        <label>Date and Time:</label>
+        <input type="date">
+        &nbsp;
+        <input type="time">
+        <br><br>
+        <button type="submit" class="btn btn-success">Book Car</button>
+        <!-- (click)="bookingCar() -->
+    </form>
+
+    <!-- * POPUPS *  -->
+    <!-- Success popup -->
+    <!--<div *ngIf="success" class="alert alert-success">
+        Booked successfully!
+    </div> -->
+    <!-- Error popup -->
+    <!--<div *ngIf="error" class="alert alert-danger">
+        {{ errorMessage }}
+    </div>-->
+
+</div>

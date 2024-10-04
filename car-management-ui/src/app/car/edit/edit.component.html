@@ -1,1 +1,47 @@
-<p>edit works!</p>
+<div class="container">
+    <h1>Car Edit Form</h1>
+    <form (ngSubmit)="saveCar()">
+        <input type="hidden" name="id" [(ngModel)]="carId">
+        <label for="brand">Brand:</label>
+        <input type="text" name="brand" [(ngModel)]="carBrand">
+        <br><br>
+        <label for="model">Model:</label>
+        <input type="text" name="model" [(ngModel)]="carModel">
+        <br><br>
+        <label for="seats">Seats:</label>
+        <input type="number" min="2">
+        <br><br>
+        <label for="license_plate">License Plate:</label>
+        <input type="text">
+        <br><br>
+        <label for="engine_type">Engine Type:</label>
+        <select [(ngModel)]="carEngTyp" name="engineType" >
+            <option value="BEV">Electric</option>
+            <option value="PHEV">Plugin Hybrid</option>
+            <option value="GASOLINE">Gasoline</option>
+            <option value="DIESEL">Diesel</option>
+            <option value="GAS">Gas</option>   
+        </select>
+        <br><br>
+        <label for="autonomy">Autonomy:</label>
+        <input type="number" min="0"> 
+        <br><br>
+        <label for="color">Color:</label>
+        <input type="text">
+        <br><br>
+        <label for="image">Image:</label>
+        <input type="file">
+        <br><br>
+        <button type="submit" class="btn btn-success">Save</button>
+    </form>
+
+    <!-- * POPUPS *  -->
+    <!-- Success popup -->
+    <!--<div *ngIf="success" class="alert alert-success">
+        Car edited successfully!
+    </div>-->
+    <!-- Error popup -->
+    <!--<div *ngIf="error" class="alert alert-danger">
+        {{ errorMessage }}
+    </div>-->
+</div>

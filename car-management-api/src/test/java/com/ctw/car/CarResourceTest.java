@@ -3,14 +3,11 @@ package com.ctw.car;
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Test;
 
-import static io.restassured.RestAssured.given;
-import static org.hamcrest.CoreMatchers.is;
-
 @QuarkusTest
 class CarResourceTest {
     @Test
     void testGetCarsEndpoint() {
-        // TODO
+        //given().when().get("/car").then().assertThat().body(containsString(""));
     }
 
 }

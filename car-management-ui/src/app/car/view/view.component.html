@@ -1,1 +1,15 @@
-<p>view works!</p>
+<div class="container" *ngIf="car">
+    <h1>Car Details</h1>
+    <p>brand: {{ car.brand }}</p>
+    <p>model: {{ car.model }}</p>
+    <p>seats: </p>
+    <p>license plate: </p>
+    <p>engine type: {{ car.engineType }}</p>
+    <p>autonomy: </p>
+    <p>color: </p>
+    <p>image: </p>
+</div>
+
+<div class="container" *ngIf="!car">
+    <h1>Loading... Please wait or try again later</h1>
+</div>

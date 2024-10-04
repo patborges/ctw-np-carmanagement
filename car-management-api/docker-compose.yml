@@ -6,7 +6,7 @@ services:
       POSTGRES_DB: car-management
       POSTGRES_USER: postgres
     ports:
-      - "5433:5432"
+      - "5432:5432"
     networks:
       - car-management-network
     volumes:
@@ -42,6 +42,14 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    develop:
+      watch:
+        - action: rebuild
+          path: ./src
+        - action: rebuild
+          path: ./db
+        - action: rebuild
+          path: ./docker-compose.yaml
     networks:
       - car-management-network
     environment:

@@ -14,11 +14,12 @@ You have two options to run you development environment:
 - Your local machine.
 - Using docker.
 
+# THIS ONE
 ### Using your local machine
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ### Using docker
-Run `docker compose up` for a complete docker development environment. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `docker compose up --build -w` for a complete docker development environment. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
