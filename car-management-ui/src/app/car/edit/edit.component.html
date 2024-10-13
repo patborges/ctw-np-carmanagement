@@ -2,19 +2,19 @@
     <h1>Car Edit Form</h1>
     <form (ngSubmit)="saveCar()">
         <input type="hidden" name="id" [(ngModel)]="carId">
-        <label for="brand">Brand:</label>
+        <label for="brand">Brand:</label>&nbsp;
         <input type="text" name="brand" [(ngModel)]="carBrand">
         <br><br>
-        <label for="model">Model:</label>
+        <label for="model">Model:</label>&nbsp;
         <input type="text" name="model" [(ngModel)]="carModel">
         <br><br>
-        <label for="seats">Seats:</label>
+        <label for="seats">Seats:</label>&nbsp;
         <input type="number" min="2">
         <br><br>
-        <label for="license_plate">License Plate:</label>
+        <label for="license_plate">License Plate:</label>&nbsp;
         <input type="text">
         <br><br>
-        <label for="engine_type">Engine Type:</label>
+        <label for="engine_type">Engine Type:</label>&nbsp;
         <select [(ngModel)]="carEngTyp" name="engineType" >
             <option value="BEV">Electric</option>
             <option value="PHEV">Plugin Hybrid</option>
@@ -23,13 +23,13 @@
             <option value="GAS">Gas</option>   
         </select>
         <br><br>
-        <label for="autonomy">Autonomy:</label>
+        <label for="autonomy">Autonomy:</label>&nbsp;
         <input type="number" min="0"> 
         <br><br>
-        <label for="color">Color:</label>
+        <label for="color">Color:</label>&nbsp;
         <input type="text">
         <br><br>
-        <label for="image">Image:</label>
+        <label for="image">Image:</label>&nbsp;
         <input type="file">
         <br><br>
         <button type="submit" class="btn btn-success">Save</button>

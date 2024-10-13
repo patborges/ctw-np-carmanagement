@@ -20,7 +20,7 @@ export class EditComponent implements OnInit {
   carModel: string = '';
   //carSeats: number = 0;
   //carLicense: string = '';
-  carEngTyp: string = ''; // (?) Or Option
+  carEngTyp: string = ''; 
   //carAutonomy: number = 0;
   //carColor: string = '';
   // carImg: File; // Exists (?)
