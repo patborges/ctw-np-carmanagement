@@ -1,46 +1,54 @@
 <div class="container">
     <h1>Car Form</h1>
-    <form (ngSubmit)="createCar()">
-        <label for="brand">Brand:</label>&nbsp;
-        <input type="text" name="brand" [(ngModel)]="carBrand">
-        <br><br>
-        <label for="model">Model:</label>&nbsp;
-        <input type="text" name="model" [(ngModel)]="carModel">
-        <br><br>
-        <label for="seats">Seats:</label>&nbsp;
-        <input type="number" min="2">
-        <br><br>
-        <label for="license_plate">License Plate:</label>&nbsp;
-        <input type="text">
-        <br><br>
-        <label for="engine_type">Engine Type:</label>&nbsp;
-        <select [(ngModel)]="carEngTyp" name="engineType">
-            <option value="BEV">Electric</option>
-            <option value="PHEV">Plugin Hybrid</option>
-            <option value="GASOLINE">Gasoline</option>
-            <option value="DIESEL">Diesel</option>
-        </select>
-        <br><br>
-        <label for="autonomy">Autonomy:</label>&nbsp;
-        <input type="number" min="0">
-        <br><br>
-        <label for="color">Color:</label>&nbsp;
-        <input type="text">
-        <br><br>
-        <label for="image">Image:</label>&nbsp;
-        <input type="file">
-        <br><br>
+    <p>Please fill all the fields.</p>
+    <form class="create-car" method="post" (ngSubmit)="createCar()">
+
+        <div class="form-group">
+            <label for="brand">Brand:</label>
+            <input type="text" name="brand" [(ngModel)]="carBrand">
+        </div>
+        
+        <div class="form-group">
+            <label for="model">Model:</label>
+            <input type="text" name="model" [(ngModel)]="carModel">
+        </div>
+
+        <div class="form-group">
+            <label for="seats">Seats:</label>
+            <input type="number" name="seats" min="2">
+        </div>
+
+        <div class="form-group">
+            <label for="license_plate">License Plate:</label>
+            <input type="text" name="licensePlate">
+        </div>
+
+        <div class="form-group">
+            <label for="engine_type">Engine Type:</label>
+            <select [(ngModel)]="carEngTyp" name="engineType" id="engine-type-select">
+                <option value="BEV">Electric</option>
+                <option value="PHEV">Plugin Hybrid</option>
+                <option value="GASOLINE">Gasoline</option>
+                <option value="DIESEL">Diesel</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="autonomy">Autonomy:</label>
+            <input type="number" name="autonomy" min="0">
+        </div>
+
+        <div class="form-group">
+            <label for="color">Color:</label>
+            <input type="text" name="color">
+        </div>
+
+        <div class="form-group">
+            <label for="image">Image:</label>
+            <input type="file">
+        </div>
+        
         <button type="submit" class="btn btn-success">Save</button>
     </form>
-
-    <!-- * POPUPS *  -->
-    <!-- Success popup -->
-    <!--<div *ngIf="success" class="alert alert-success">
-        Car added successfully!
-    </div>-->
-    <!-- Error popup -->
-    <!--<div *ngIf="error" class="alert alert-danger">
-        {{ errorMessage }}
-    </div>-->
 
 </div>
